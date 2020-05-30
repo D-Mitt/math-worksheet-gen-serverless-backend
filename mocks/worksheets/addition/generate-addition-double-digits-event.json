@@ -1,0 +1,8 @@
+{
+  "body": "{\"category\":\"addition\",\"subCategory\":\"doubleDigits\",\"config\":{\"questionsPerWorksheet\":3,\"numPerQuestion\":[2,3]}}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}

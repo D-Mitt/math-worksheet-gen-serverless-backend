@@ -1,0 +1,8 @@
+{
+  "body": "{\"category\":\"addition\",\"subCategory\":\"singleDigits\",\"config\":{\"questionsPerWorksheet\":3,\"numPerQuestion\":[2,3],\"isInline\":false}}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}

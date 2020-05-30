@@ -87,6 +87,18 @@ functions:
           cors: true
           authorizer: aws_iam
 
+  generateWorksheet:
+    # Defines an HTTP API endpoint that calls the main function in generateWorksheet.js
+    # - path: url path is /generate
+    # - method: POST request
+    handler: generateWorksheet.main
+    events:
+      - http:
+          path: generate
+          method: post
+          cors: true
+          authorizer: aws_iam
+
   billing:
     # Defines an HTTP API endpoint that calls the main function in billing.js
     # - path: url path is /billing

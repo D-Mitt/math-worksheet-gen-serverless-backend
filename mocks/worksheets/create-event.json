@@ -1,5 +1,5 @@
 {
-  "body": "{\"content\":{\"title\":\"worksheet-title\",\"questions\":[\"question\"],\"answers\":[\"answer\"],\"category\":{\"name\":\"Addition\",\"isSelectable\":true},\"subCategory\":{\"name\":\"Single Digit Addition\",\"isSelectable\":true}}}",
+  "body": "{\"title\":\"worksheet-title\",\"questions\":[\"question\"],\"answers\":[\"answer\"],\"category\":{\"name\":\"Addition\",\"isSelectable\":true},\"subCategory\":{\"name\":\"Single Digit Addition\",\"isSelectable\":true}}",
   "requestContext": {
     "identity": {
       "cognitoIdentityId": "USER-SUB-1234"

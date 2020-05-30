@@ -13,12 +13,15 @@ export const main = handler(async (event, context) => {
     //             Cognito Identity Pool, we will use the identity id
     //             as the user id of the authenticated user
     // - 'worksheetId': a unique uuid
-    // - 'content': parsed from request body
     // - 'createdAt': current Unix timestamp
     Item: {
       userId: event.requestContext.identity.cognitoIdentityId,
       worksheetId: uuidv4(),
-      content: data.content,
+      title: data.title,
+      questions: data.questions,
+      answers: data.answers,
+      category: data.category,
+      subCategory: data.subCategory,
       createdAt: Date.now(),
       updatedAt: Date.now(),
     },
