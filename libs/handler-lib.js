@@ -9,10 +9,16 @@ export default function handler(lambda) {
       statusCode = 500;
       let errorMessage = error.message;
 
-      if (errorMessage && errorMessage.length > 6) {
-        let httpStatus = errorMessage.substring(1, 4);
-        errorMessage = errorMessage.substring(6, error.message.length);
-        statusCode = setStatusCode(httpStatus);
+      if (errorMessage) {
+        if (errorMessage.startsWith("[") && errorMessage.length > 6) {
+          let httpStatus = errorMessage.substring(1, 4);
+          errorMessage = errorMessage.substring(6, error.message.length);
+          statusCode = setStatusCode(httpStatus);
+        } else {
+          if (errorMessage.includes("not found")) {
+            statusCode = 404;
+          }
+        }
       }
 
       responseBody = { error: errorMessage };
