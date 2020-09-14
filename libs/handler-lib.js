@@ -36,8 +36,6 @@ export default function handler(lambda) {
 }
 
 const setStatusCode = (httpStatus) => {
-  console.log("httpsStatus: ", httpStatus);
-  console.log("parsed: ", parseInt(httpStatus));
   switch (parseInt(httpStatus)) {
     case 401:
       return 401;

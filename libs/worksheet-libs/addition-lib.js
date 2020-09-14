@@ -1,19 +1,19 @@
 export const generateAdditionWorksheet = (subCategory, config) => {
   switch (subCategory) {
-    case "singleDigits":
+    case "Single Digit Addition":
       return generateSingleDigitAdditionQuestions(
-        config.questionsPerWorksheet,
+        config.numOfQuestions,
         config.numPerQuestion,
         config.isInline
       );
-    case "doubleDigits":
+    case "Double Digit Addition":
       return generateDoubleDigitAdditionQuestions(
-        config.questionsPerWorksheet,
+        config.numOfQuestions,
         config.numPerQuestion
       );
-    case "largeNumbers":
+    case "Large Numbers":
       return generateLargeNumberAdditionQuestions(
-        config.questionsPerWorksheet,
+        config.numOfQuestions,
         config.numPerQuestion,
         config.rangeOfDigitsPerNumber
       );

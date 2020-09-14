@@ -5,7 +5,7 @@ export const generateWorksheet = (data) => {
   const subCategory = data.subCategory;
 
   switch (category) {
-    case "addition":
+    case "Addition":
       return generateAdditionWorksheet(subCategory, data.config);
     default:
       return;

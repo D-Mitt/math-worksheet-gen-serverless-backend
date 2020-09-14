@@ -1,5 +1,5 @@
 {
-  "body": "{\"category\":\"addition\",\"subCategory\":\"singleDigits\",\"config\":{\"questionsPerWorksheet\":3,\"numPerQuestion\":[2,3],\"isInline\":false}}",
+  "body": "{\"category\":\"Addition\",\"subCategory\":\"Single Digit Addition\",\"config\":{\"questionsPerWorksheet\":3,\"numPerQuestion\":[2,3],\"isInline\":false}}",
   "requestContext": {
     "identity": {
       "cognitoIdentityId": "USER-SUB-1234"
